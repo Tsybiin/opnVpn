@@ -1,0 +1,47 @@
+#!/bin/bash
+# пример bash createVpnKeys {password rsa}
+EXPECT_TEXT="Enter pass phrase for /etc/openvpn/pki/private/ca.key:"
+KEY_DIR=/home/tsybin/keysVpn/$NAME
+OUTPUT_DIR=/home/tsybin/keysVpn/$NAME
+BASE_CONFIG=/home/tsybin/keysVpn/base.conf
+COMMAND="./easyrsa build-client-full $NAME nopass"
+# TODO пароль вводитьь в консоли
+countkey=$2
+password=$1'\n'
+echo $password
+echo $countkey
+
+cd ~/www/opnVpn/keys/new
+count=1
+while [ $count -le 10  ]
+do
+  NAME=v_$(date +%s)
+#create key
+COMMSHOW="
+puts $(pwd)
+    set timeout 3
+    spawn docker-compose run --rm openvpn1 easyrsa build-client-full $NAME nopass
+    expect \"$exShow\"
+    send \"$password\"
+    expect \"Data Base Updated\"
+    send \"done\"
+expect eof "
+
+expect -c "$COMMSHOW"
+docker-compose run --rm openvpn1 ovpn_getclient $NAME > $NAME.ovpn
+  echo "key create: $NAME.ovpn"
+  count=$((count + 1))
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
