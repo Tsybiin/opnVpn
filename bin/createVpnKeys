@@ -13,14 +13,14 @@ echo $countkey
 
 cd ~/www/opnVpn/keys/new
 count=1
-while [ $count -le 10  ]
+while [ $count -le 1  ]
 do
   NAME=v_$(date +%s)
 #create key
 COMMSHOW="
 puts $(pwd)
     set timeout 3
-    spawn docker-compose run --rm openvpn1 easyrsa build-client-full $NAME nopass
+    spawn docker-compose run --rm openvpn2 easyrsa build-client-full $NAME nopass
     expect \"$exShow\"
     send \"$password\"
     expect \"Data Base Updated\"
@@ -28,13 +28,18 @@ puts $(pwd)
 expect eof "
 
 expect -c "$COMMSHOW"
-docker-compose run --rm openvpn1 ovpn_getclient $NAME > $NAME.ovpn
-  echo "key create: $NAME.ovpn"
+
+docker-compose run --rm openvpn2 ovpn_getclient $NAME > $NAME.ovpn
+
+if grep -q "error" "$NAME.ovpn"; then
+   rm $NAME.ovpn
+   echo "error creating certificate" $NAME.ovpn
+   exit 1  # Завершение с кодом 1 (можно любой другой)
+else
+   echo "key create: $NAME.ovpn"
+fi
   count=$((count + 1))
 done
-
-
-
 
 
 
