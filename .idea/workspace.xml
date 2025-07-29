@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed50572a-7f31-40f1-8441-aba194d96989" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/createVpnKeys" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/revokeKey" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/build/openvpn/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="ed50572a-7f31-40f1-8441-aba194d96989" name="Changes" comment="scripts key">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/createVpnKeys" beforeDir="false" afterPath="$PROJECT_DIR$/bin/createVpnKeys" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +54,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Docker.build/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -68,7 +67,7 @@
     &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
     &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/ts/myProject/openVpn&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/ts/myProject/openVpn/keys/new&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -80,12 +79,50 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/keys/new" />
+      <recent name="$PROJECT_DIR$/docker/build" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/docker/build/openvpn" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/bin" />
     </key>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="build/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker_VPS">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="docker/build/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker_VPS">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.build/Dockerfile" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -110,8 +147,37 @@
       <workItem from="1753508752706" duration="430000" />
       <workItem from="1753509206734" duration="94000" />
       <workItem from="1753509315923" duration="20719000" />
-      <workItem from="1753608943231" duration="19474000" />
+      <workItem from="1753608943231" duration="27884000" />
+      <workItem from="1753639102970" duration="4051000" />
+      <workItem from="1753644585476" duration="1707000" />
+      <workItem from="1753780636848" duration="3043000" />
+      <workItem from="1753783689511" duration="3025000" />
     </task>
+    <task id="LOCAL-00001" summary="scripts key">
+      <option name="closed" value="true" />
+      <created>1753630239803</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753630239803</updated>
+    </task>
+    <task id="LOCAL-00002" summary="scripts key">
+      <option name="closed" value="true" />
+      <created>1753633043006</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753633043006</updated>
+    </task>
+    <task id="LOCAL-00003" summary="scripts key">
+      <option name="closed" value="true" />
+      <created>1753783813705</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1753783813705</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +194,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -139,5 +205,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="scripts key" />
+    <option name="LAST_COMMIT_MESSAGE" value="scripts key" />
   </component>
 </project>
