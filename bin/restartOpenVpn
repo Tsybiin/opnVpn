@@ -1,0 +1,21 @@
+#!/bin/bash
+cd /home/tsybin_v/www/simp/bin && docker restart openvpn
+echo $(date)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed50572a-7f31-40f1-8441-aba194d96989" name="Changes" comment="scripts key">
+      <change afterPath="$PROJECT_DIR$/bin/restartOpenVpn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/sendOpenVpnStatus" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/createVpnKeys" beforeDir="false" afterPath="$PROJECT_DIR$/bin/createVpnKeys" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/build/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/build/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +70,7 @@
     &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
     &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/ts/myProject/openVpn/keys/new&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/ts/myProject/openVpn/bin&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -79,6 +82,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bin" />
       <recent name="$PROJECT_DIR$/keys/new" />
       <recent name="$PROJECT_DIR$/docker/build" />
       <recent name="$PROJECT_DIR$" />
@@ -151,7 +155,27 @@
       <workItem from="1753639102970" duration="4051000" />
       <workItem from="1753644585476" duration="1707000" />
       <workItem from="1753780636848" duration="3043000" />
-      <workItem from="1753783689511" duration="3025000" />
+      <workItem from="1753783689511" duration="4964000" />
+      <workItem from="1753857189451" duration="415000" />
+      <workItem from="1753857657006" duration="4571000" />
+      <workItem from="1753892719903" duration="92000" />
+      <workItem from="1754303462589" duration="916000" />
+      <workItem from="1754304428749" duration="2880000" />
+      <workItem from="1754314769213" duration="608000" />
+      <workItem from="1754339210090" duration="409000" />
+      <workItem from="1754339634945" duration="1962000" />
+      <workItem from="1754379152735" duration="1361000" />
+      <workItem from="1754382155867" duration="296000" />
+      <workItem from="1754593303899" duration="2592000" />
+      <workItem from="1754600628131" duration="1285000" />
+      <workItem from="1754603391745" duration="951000" />
+      <workItem from="1754605852546" duration="592000" />
+      <workItem from="1754637365127" duration="533000" />
+      <workItem from="1754637924920" duration="147000" />
+      <workItem from="1754638099283" duration="8000" />
+      <workItem from="1754897423921" duration="7000" />
+      <workItem from="1755027239167" duration="3716000" />
+      <workItem from="1755066166699" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="scripts key">
       <option name="closed" value="true" />
@@ -177,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753783813705</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="scripts key">
+      <option name="closed" value="true" />
+      <created>1753786759511</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1753786759511</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

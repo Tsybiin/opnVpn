@@ -40,16 +40,6 @@ else
 fi
   count=$((count + 1))
 done
-scp -r  ~/www/opnVpn/keys/new root@109.120.141.32:/var/dev/keys/new
+scp -r  ~/www/opnVpn/keys/new/* old@109.120.141.32:/var/dev/keys/new/
 cd ~/www/opnVpn/keys/new
 mv * ~/www/opnVpn/keys/send
-
-
-
-
-
-
-
-
-
-

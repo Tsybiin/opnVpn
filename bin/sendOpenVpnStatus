@@ -1,0 +1,15 @@
+#!/bin/bash
+scp /home/tsybin_v/www/simp/docker/build/openvpn/log/openvpn-status.log root@109.120.141.32:/var/dev/newSimpl/simp/var/www/exchange/log
+
+
+
+
+
+
+
+
+
+
+
+
+
