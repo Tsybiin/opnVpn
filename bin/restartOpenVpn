@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/tsybin_v/www/simp/bin && docker restart openvpn
+cd /var/www/opnVpn && docker restart openvpn
 echo $(date)
 
 
