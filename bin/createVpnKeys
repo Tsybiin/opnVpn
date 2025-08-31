@@ -11,7 +11,7 @@ password=$1'\n'
 echo $password
 echo $countkey
 
-cd ~/www/opnVpn/keys/new
+cd /var/www/opnVpn/keys/new
 count=1
 while [ $count -le 1  ]
 do
@@ -20,7 +20,7 @@ do
 COMMSHOW="
 puts $(pwd)
     set timeout 3
-    spawn docker-compose run --rm openvpn2 easyrsa build-client-full $NAME nopass
+    spawn docker compose run --rm openvpn easyrsa build-client-full $NAME nopass
     expect \"$exShow\"
     send \"$password\"
     expect \"Data Base Updated\"
@@ -29,7 +29,7 @@ expect eof "
 
 expect -c "$COMMSHOW"
 
-docker-compose run --rm openvpn2 ovpn_getclient $NAME > $NAME.ovpn
+docker compose run --rm openvpn ovpn_getclient $NAME > $NAME.ovpn
 
 if grep -q "error" "$NAME.ovpn"; then
    rm $NAME.ovpn
@@ -40,6 +40,5 @@ else
 fi
   count=$((count + 1))
 done
-scp -r  ~/www/opnVpn/keys/new/* old@109.120.141.32:/var/dev/keys/new/
-cd ~/www/opnVpn/keys/new
-mv * ~/www/opnVpn/keys/send
+scp -r  /var/www/opnVpn/keys/new/* old@31.59.174.111:/var/www/newSimpl/simp/var/www/keys/new
+mv * /var/www/opnVpn/keys/send
