@@ -1,13 +1,5 @@
 #!/bin/bash
-scp /var/www/opnVpn/docker/build/openvpn/log/openvpn-status.log old@31.59.174.111:/var/www/newSimpl/simp/var/www/exchange/log
-
-
-
-
-
-
-
-
+scp /var/www/opnVpn/docker/build/openvpn/log/openvpn-status.log old@31.59.174.111:/var/www/newsimp/simp/var/www/exchange/log
 
 
 

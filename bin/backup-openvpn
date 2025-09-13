@@ -1,0 +1,14 @@
+#!/bin/bash
+# backup-openvpn-minimal.sh
+
+BACKUP_DIR="$HOME/openvpn_backups"
+mkdir -p "$BACKUP_DIR"
+
+# Переходим в родительскую директорию и архивируем только нужную папку
+cd /var/www/opnVpn/docker/build && \
+tar -czf "$BACKUP_DIR/openvpn_backup_$(date +%Y%m%d).tar.gz" openvpn 2>/dev/null
+
+find "$BACKUP_DIR" -name "openvpn_backup_*.tar.gz" -mtime +7 -delete
+
+echo 'BACKUP Create' $(date +%Y%m%d_%H%M%S)
+# 30 4 * * * /home/username/backup-openvpn-cron.sh >> /home/username/openvpn_backups/backup.log 2>&1
